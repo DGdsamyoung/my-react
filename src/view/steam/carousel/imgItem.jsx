@@ -7,7 +7,9 @@ class ImgItem extends React.Component {
     render() {
         return (
             <div className="itme-img-wrapper">
-               <div className="img-wrapper"></div>
+               <div className="img-wrapper">
+                   <img  src={this.props.src}/>
+               </div>
                <div className="content-wrapper">右</div>
             </div>
         )

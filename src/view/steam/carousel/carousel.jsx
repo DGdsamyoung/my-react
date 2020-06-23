@@ -10,7 +10,7 @@ class Carousel extends React.Component {
         return (
             <div>
                 <Item age='88'>
-                   <ImgItem></ImgItem>
+                   <ImgItem src={[require("../img/carousel/cal-bg-2.jpg")]}></ImgItem>
                     <img src={[require("../img/carousel/cal-bg-2.jpg")]} alt="" />
                     <img src={[require("../img/carousel/cal-bg-3.jpg")]} alt="" />
                 </Item>
