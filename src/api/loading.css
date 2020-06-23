@@ -1,0 +1,23 @@
+.loading-indicator:before {
+    content: '';
+    background:rgba(255, 255, 255, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.loading-indicator:after {
+    content: 'Loading...';
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1001;
+    color:rgb(49, 187, 253);
+    text-align:center;
+    font-weight:bold;
+    font-size:1.5rem;        
+}

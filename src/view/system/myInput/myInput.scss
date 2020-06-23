@@ -1,0 +1,17 @@
+.vpopmenu{
+    position:absolute;
+    width:200px;
+    border-radius:5px;
+    background-color:rgba(13,78,146,0.9);
+    border:rgb(13,78,146);
+    z-index:9999;
+    padding:2px;
+    display:none;
+}
+.vpopmenu>div{
+    padding:2px 2px 2px 30px;
+    height:24px;
+}
+.vpopmenu > div:hover {
+    background-color:rgba(245, 239, 89, 0.30);
+}
