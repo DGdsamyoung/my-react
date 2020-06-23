@@ -1,94 +1,29 @@
 import React from 'react';
 import './navbar.scss'
+import Item from 'antd/lib/list/Item';
+import {
+    SearchOutlined
+  } from '@ant-design/icons';
 const menu = [
     {
-        text: '商店',
-        submMenu: [
-            {
-                text: '精选'
-            },
-            {
-                text: '愿望单'
-            },
-            {
-                text: '新闻'
-            },
-            {
-                text: '统计'
-            }
-        ]
+        text: '您的商店',
     },
     {
-        text: '社区',
-        submMenu: [
-            {
-                text: '主页'
-            },
-            {
-                text: '讨论'
-            },
-            {
-                text: '创意工坊'
-            },
-            {
-                text: '市场'
-            },
-            {
-                text: '实况直播'
-            }
-        ]
+        text: '游戏',
     },
     {
-        text: '关于',
-        submMenu: []
+        text: '软件',
     },
     {
-        text: '服务',
-        submMenu: []
-    }
+        text: '硬件',
+    },
+    {
+        text: '新闻',
+    },
+    {
+        text: 'xxx实验室',
+    },
 ]
-
-
- 
-var arr = [{
-    key: '01',
-    value: 'abc'
- }, {
-    key: '02',
-    value: 'edf'
- }, {
-    key: '03',
-    value: 'ccg'
- },{
-    key: '04',
-    value: 'ttt'
- },{
-    key: '01',
-    value: 'abc'
- }];
-
-
- //  利用对象访问属性的方法，判断对象中是否存在key
- var result = [];
- var obj = {};
- for(var i =0; i<arr.length; i++){
-    if(!obj[arr[i].key]){
-       result.push(arr[i]);
-       obj[arr[i].key] = true;
-    }
- }
- console.log(result); 
- console.log(obj)
-
- const s = new Set();
-
-['2','3','5','4','5',2,2].forEach(x => s.add(x));
-// Set结构不会添加重复的值
-
-for(let i of s) {
-  console.log(i);
-}
-console.log(Array.from(s));
 class Navbar extends React.Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props) {
@@ -100,7 +35,25 @@ class Navbar extends React.Component {
                 <div className="navbar-menu">
                     <div className="navbar-menu-area">
                         <div className="navbar-menu-list">
-
+                        <div className="navbar-wrapper">
+                            {
+                               
+                                menu.map((item, index) => {
+                                    return (
+                                        <div key={index} className="menu-item">
+                                            <span>{item.text}</span>
+                                        </div>
+                                    )
+                                })
+                                
+                            }
+                            </div>
+                            <div className="search-wrapper">
+                                <div className="search-content">
+                                    <input className="search-input" placeholder="搜索商店" />
+                                    <SearchOutlined />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
