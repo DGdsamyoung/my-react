@@ -2,7 +2,7 @@
 import React from 'react';
 import './Carousel.scss'
 import {
-    LeftCircleOutlined, RightCircleOutlined
+    LeftOutlined, RightOutlined
 } from '@ant-design/icons';
 import { CSSTransition } from 'react-transition-group'
 class CarouselItem extends React.Component {
@@ -12,7 +12,7 @@ class CarouselItem extends React.Component {
         console.log(props)
         this.state = {
             index: 0,
-            focused:false
+            focused: false
         }
 
     }
@@ -52,7 +52,7 @@ class CarouselItem extends React.Component {
             <div className="Carousel-item-wrapper" style={{ width: this.props.width, height: this.props.height }}>
                 {/* <img src={[require("../img/carousel/cal-bg.jpg")]} alt="" /> */}
                 <CSSTransition
-                in={this.state.focused}
+                    in={this.state.focused}
                     timeout={2000}
                     classNames='slide'
                 >
@@ -60,10 +60,14 @@ class CarouselItem extends React.Component {
 
                 </CSSTransition>
                 <div className="item-left-icon">
-                    <span onClick={this.prevOne}> <LeftCircleOutlined /></span>
+                    <div className="left-icon-bg" onClick={this.prevOne}>
+                        <LeftOutlined />
+                    </div>
                 </div>
-                <div onClick={this.nextOne} className="item-right-icon">
-                    <RightCircleOutlined />
+                <div className="item-right-icon">
+                    <div className="right-icon-bg" onClick={this.nextOne} >
+                        <RightOutlined />
+                    </div>
                 </div>
             </div>
         )

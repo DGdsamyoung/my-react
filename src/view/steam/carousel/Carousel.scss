@@ -1,64 +1,145 @@
-.Carousel-item-wrapper{
-    margin:  0 auto;
+.carousel-wrapper {
+    background-image: (linear-gradient(to left, rgba(27, 40, 56, 1) 0%, rgba(26, 61, 83, 1) 50%, rgba(27, 40, 57, 1) 100%));
+}
+
+.Carousel-item-wrapper {
+    margin: 0 auto;
     position: relative;
+
     .slide-enter {
         transition: all 2s ease-out;
     }
+
     .slide-enter-active {
         opacity: 0;
     }
+
     .slide-exit {
         transition: all 2s ease-out;
     }
+
     .slide-exit-active {
         opacity: 0;
     }
+
     /*页面第一次加载时的开始状态*/
-// .slide-appear {
-//     opacity: 1;
-//   }
-  
-//   /*页面第一次加载时的动画过程*/
-//   .slide-appear-active {
-//     opacity: 0;
-//     transition: opacity 1s ease-in;
-//   }
-.itme-img-wrapper{
-    width: 100%;
-    display: flex;
-    box-shadow: 0 0 7px 0px #000;
-    .img-wrapper{
-        flex-basis: 70%;
-        img{
-            width: 100%;
-            height: 100%;
+    // .slide-appear {
+    //     opacity: 1;
+    //   }
+
+    //   /*页面第一次加载时的动画过程*/
+    //   .slide-appear-active {
+    //     opacity: 0;
+    //     transition: opacity 1s ease-in;
+    //   }
+    .itme-img-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        box-shadow: 0 0 7px 0px #000;
+        transform: all 0.5s;
+
+        .img-wrapper {
+            flex-basis: 70%;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+        .content-wrapper {
+            flex-basis: 31%;
+            background-color: rgba(17, 27, 36, 1);
+            background: filter-gradient(#111b24, #050d14, horizontal);
+            background: background-image(linear-gradient(to left, rgba(17, 27, 36, 1) 0%, rgba(5, 13, 20, 1) 100%));
+
+            .content-title {
+                padding: 20px 10px;
+                color: white;
+                font-size: 24px;
+            }
+
+            .content-img {
+                width: 100%;
+                height: 240px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+
+                .img-item-wrapper {
+                    height: 100px;
+                    width: 45%;
+                    position: relative;
+                    cursor: pointer;
+
+                    .img-item {
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-size: 100% 100%;
+                    }
+
+                    .img-item-bg {
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.3);
+                        transform: all 0.3s;
+                        z-index: 20;
+                    }
+
+                    .img-item-bg:hover {
+                        background: rgba(0, 0, 0, 0);
+                    }
+                }
+
+            }
         }
     }
-    .content-wrapper{
-        flex-basis: 30%;
-    }
-}
-    img{
-     width: 100%;
-     height: 100%;       
-    }
-    .item-left-icon{
+
+
+    .item-left-icon {
         position: absolute;
         display: flex;
-        align-items:center;
-        left: 16px;
-        top:0px;
+        align-items: center;
+        left: -47px;
+        top: 0px;
         height: 100%;
         font-size: 30px;
+        color: white;
+
+        .left-icon-bg {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 100px;
+            background-image: linear-gradient(to right, rgba(19, 28, 40, 1) 0%, rgba(7, 39, 56, 0.24) 100%);
+        }
     }
-    .item-right-icon{
-        font-size: 30px;
+
+    .item-right-icon {
         position: absolute;
         display: flex;
-        align-items:center;
-        right: 16px;
-        top:0px;
+        align-items: center;
+        right: -47px;
+        top: 0px;
         height: 100%;
-     
+        font-size: 30px;
+        color: white;
+
+        .right-icon-bg {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 100px;
+            background-image: linear-gradient(to left, rgba(19, 28, 40, 1) 0%, rgba(7, 39, 56, 0.24) 100%);
+        }
+
     }
+
 }
