@@ -6,6 +6,11 @@ import './Carousel.scss'
 
 const info = [
     {
+        title:'nba 2k sprot',
+        subtitle:'正在推出',
+        tags:['好玩','产品热销'],
+        value:'399',
+        valueType:'¥',
         imgList: [
             "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=116129698,1494879141&fm=26&gp=0.jpg",
             "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1746004835,2487098339&fm=26&gp=0.jpg",
@@ -15,6 +20,11 @@ const info = [
         mainImg: "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2823640242,4256122871&fm=11&gp=0.jpg"
     },
     {
+        title:'wwe 2k',
+        subtitle:'现在正在免费体验',
+        tags:['VR-3D','产品热销'],
+        value:'299',
+        valueType:'¥',
         imgList: [
             "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2696455550,1951208996&fm=26&gp=0.jpg",
             "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1746004835,2487098339&fm=26&gp=0.jpg",

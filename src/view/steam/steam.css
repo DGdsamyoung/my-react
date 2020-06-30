@@ -1,4 +1,6 @@
-.warpper{
-height: 100%;
+.wrapper{
+/* height: 100%; */
 width: 100%;
+background: url("./img/bg.png")  no-repeat center top, #052842;
+background-size: cover;
 }

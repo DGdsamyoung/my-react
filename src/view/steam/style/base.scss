@@ -1,0 +1,32 @@
+.default-buttom{
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #D2E885 !important;
+    background: #a4d007;
+    background: -webkit-linear-gradient( top, #a4d007 5%, #536904 95%);
+    background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+    .buttom-text{
+        padding: 0 15px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+.default-dec{
+    color: #959595;
+    font-size: 12px;
+}
+.default-content{
+    color: white;
+    font-size: 12px;
+}
+.discount-tag{
+    background: #A1CD44;
+    font-size: 14px;
+    color: #000000;
+    line-height: 26px;
+    padding: 0 16px;
+}
