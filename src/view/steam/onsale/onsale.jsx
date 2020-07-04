@@ -2,7 +2,7 @@ import React from 'react';
 import './onsale.scss'
 import Item from './onSaleItem'
 const info = {
-    src:'http://img2.imgtn.bdimg.com/it/u=376106583,2338120943&fm=26&gp=0.jpg',
+    src:'http://img4.imgtn.bdimg.com/it/u=2840337784,759594984&fm=26&gp=0.jpg',
     src1:'http://img1.imgtn.bdimg.com/it/u=3506059711,1760541670&fm=26&gp=0.jpg',
     developers:'育碧',
     publisher:'腾讯',

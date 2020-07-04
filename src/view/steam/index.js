@@ -5,6 +5,7 @@ import MyNarbar from './navbar/navbar'
 import MyCarousel from './carousel/carousel.jsx'
 import MyOnSale from './onsale/onsale'
 import {Series} from './series/series'
+import {Flow} from './flow/flow'
 class Steam extends React.Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props) {
@@ -17,7 +18,9 @@ class Steam extends React.Component {
                 <MyNarbar></MyNarbar>
                 <MyCarousel></MyCarousel>
                 <MyOnSale></MyOnSale>
+                <Flow></Flow>
                 <Series></Series>
+
             </div>
         )
     }

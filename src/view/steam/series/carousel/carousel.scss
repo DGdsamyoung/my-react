@@ -1,0 +1,99 @@
+.overflow{
+    overflow: hidden;
+}
+.carousel-left{
+    right: 99%;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.carousel-right{
+    left: 99%;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.carousel-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2%;
+    width: auto;
+    position: relative;
+   
+.carousel-content{
+    overflow: hidden;
+}
+    .item-left-icon {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: -47px;
+        top: 0px;
+        height: 100%;
+        font-size: 30px;
+        color: white;
+
+        .left-icon-bg {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 100px;
+            background-image: linear-gradient(to right, rgba(19, 28, 40, 1) 0%, rgba(7, 39, 56, 0.24) 100%);
+        }
+    }
+
+    .item-right-icon {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: -47px;
+        top: 0px;
+        height: 100%;
+        font-size: 30px;
+        color: white;
+
+        .right-icon-bg {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 100px;
+            background-image: linear-gradient(to left, rgba(19, 28, 40, 1) 0%, rgba(7, 39, 56, 0.24) 100%);
+        }
+
+    }
+}
+
+.small-item-wrapper {
+    // text-align: center;
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    .small-item {
+        margin: 12px 2px;
+        width: 15px;
+        height: 9px;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+        background-color: hsla(202, 60%, 100%, 0.2);
+        cursor: pointer;
+    }
+
+    .select-small-item {
+        margin: 12px 2px;
+        width: 15px;
+        height: 9px;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+        background-color: hsla(202, 60%, 100%, 0.8);
+        cursor: pointer;
+    }
+}
+
+
+
