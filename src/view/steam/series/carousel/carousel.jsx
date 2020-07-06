@@ -80,6 +80,7 @@ export class Carousel extends React.Component {
                     2
                 </div>
                     <div className="item-left-icon">
+                        
                         <div className="left-icon-bg" onClick={this.prevOne}>
                             <LeftOutlined />
                         </div>
